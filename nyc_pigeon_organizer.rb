@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
         else
           byname[name] = {}
         end
-        byname[name][key] << label
+        byname[name][key] << label.to_si
     end
   end
 end
