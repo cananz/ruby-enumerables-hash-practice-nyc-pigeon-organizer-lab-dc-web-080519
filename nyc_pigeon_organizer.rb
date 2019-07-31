@@ -1,7 +1,7 @@
 def nyc_pigeon_organizer(data)
   byname = {}
   data.each do |key, category|
-    category.each do |label, names|
+    category.each do |key2, names|
       names.each do |name|
         
         if byname[name]
@@ -9,7 +9,7 @@ def nyc_pigeon_organizer(data)
         else
           byname[name] = {}
         end
-        byname[name][key] << label.to_s
+        byname[name][key] << key2.to_s
     end
   end
 end
