@@ -6,7 +6,6 @@ def nyc_pigeon_organizer(data)
         
         if byname[name]
           if byname[name][key] 
-            
           byname[name][key] = ["#{label}"]
         else
           byname[name] = {}
