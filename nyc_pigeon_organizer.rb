@@ -5,7 +5,7 @@ def nyc_pigeon_organizer(data)
       names.each do |name|
         
         if byname[name]
-          byname[name][key] = ["#{label}"]
+          byname[name][key] << ["#{label}"]
         else
           byname[name] = {}
         end
